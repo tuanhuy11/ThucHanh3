@@ -1,0 +1,15 @@
+1. Quản lý user (Đức)
+	- Thông tin user
+	- Thêm sửa xóa user
+
+2. Quản lý khóa học (Huy)
+	- Thông tin khóa học
+	- Thêm sửa xóa khóa học
+
+3. Quản lý Tài nguyên của bài học (Hiệp)
+	- Thông tin tài nguyên của các bài học
+	- Thêm sửa xóa tài nguyên
+
+4. Quản lý về bài kiểm tra (Dũng)
+	- Thông tin bài kiểm tra
+	- Thêm sửa xóa bài kiểm tra
