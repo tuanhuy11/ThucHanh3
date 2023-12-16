@@ -1,0 +1,8 @@
+.admin-dashboard-page-main {
+    display: flex;
+    margin-top: calc(80px + 78.5px);
+}
+
+.admin-dashboard-page-main .container {
+    padding: 0px 100px;
+}

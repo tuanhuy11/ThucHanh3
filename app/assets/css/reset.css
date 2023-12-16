@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--extra-light-orange); 
+    border-radius: 99px;
+    transition: background-color 0.3s linear;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-orange); 
+}

@@ -1,0 +1,83 @@
+.login-page-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-page-main form {
+    width: 800px;
+    text-align: center;
+}
+
+.login-page-main form h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.login-page-main .form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.login-page-main .form-group input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(204, 204, 204);
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+    transition: 0.4s linear;
+    transition-property: outline, border-color;
+}
+
+.login-page-main .form-group label {
+    position: absolute;
+    font-weight: 700;
+    color: rgb(184, 184, 184);
+    top: 15px;
+    left: 22px;
+    cursor: text;
+    transition: 0.3s linear;
+    transition-property: top, left, font-size, color, padding, background-color;
+    border-radius: 99px;
+}
+
+.login-page-main .form-group input:focus {
+    outline: 2px solid var(--bold-orange);
+    border-color: transparent;
+}
+
+.login-page-main .form-group input:not(:placeholder-shown) + label,
+.login-page-main .form-group input:focus + label {
+    font-size: 1.4rem;
+    top: -11px;
+    left: 35px;
+    padding: 2px 10px;
+    background-color: white;
+    color: var(--extra-bold-orange);
+}
+
+.login-page-main a {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    color: var(--middle-orange);
+    margin-bottom: 20px;
+}
+
+.login-page-main button {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    padding: 10px 0px;
+    background-color: var(--middle-orange);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,97 @@
+.admin-sidebar {
+    position: relative;
+}
+
+.admin-sidebar .sidebar-list {
+    position: relative;
+    visibility: hidden;
+    width: 0px;
+    opacity: 0;
+    translate: -100%;
+    transition: 0.4s linear;
+    transition-property: opacity, visibility, translate, width;
+}
+
+.admin-sidebar .label-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    top: 4.5px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    outline: 8px solid white;
+    background-color: var(--middle-orange);
+    border-radius: 99px;
+    transition: 0.4s 0.02s linear;
+    transition-property: opacity, visibility, left;
+    z-index: 2;
+}
+
+.admin-sidebar .sidebar-icon-show {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    stroke: white;
+    fill: none;
+    stroke-width: 2;
+    margin-left: 2px;
+    transition: transform 0.4s linear;
+}
+
+.admin-sidebar .sidebar-list .sidebar-item {
+    margin-bottom: 10px;
+}
+
+.admin-sidebar .sidebar-list .sidebar-item a {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    background-color: var(--extra-light-orange);
+    width: 90%;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 0px 99px 99px 0px;
+    overflow-x: hidden;
+}
+
+.admin-sidebar .sidebar-list .sidebar-item svg {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0px 15px 0px 20px;
+    stroke-width: 2;
+}
+
+.admin-sidebar .sidebar-list .sidebar-item:first-child {
+    position: relative;
+    width: 100%;
+    background-color: var(--middle-orange);
+    height: 50px;
+    border-radius: 0px;
+}
+
+.admin-sidebar .sidebar-list .sidebar-item p {
+    display: inline-block;
+    font-weight: 700;
+}
+
+.admin-sidebar #toggle-sidebar-list:checked ~ .sidebar-list {
+    visibility: visible;
+    opacity: 1;
+    translate: 0%;
+    width: 200px;
+}
+
+.admin-sidebar #toggle-sidebar-list:checked + .label-toggle {
+    left: 185px;
+}
+
+.admin-sidebar #toggle-sidebar-list:checked + .label-toggle svg {
+    transform: rotate(180deg);
+    margin-left: 0;
+    margin-right: 2px;
+}
