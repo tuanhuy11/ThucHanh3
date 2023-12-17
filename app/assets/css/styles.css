@@ -1,8 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 @import url('./variables.css');
 @import url('./reset.css');
+
+/* Style Components */
 @import url('./styleNavigation.css');
-@import url('./styleHomePage.css');
-@import url('./styleLoginPage.css');
 @import url('./styleSidebarAdmin.css');
+
+/* Style Home */
+@import url('./styleHomePage.css');
+
+/* Style Auth Form */
+@import url('./styleLoginPage.css');
+
+/* Style Admin Dashboard */
 @import url('./styleAdminDashboard.css');
+
+/* Style Admin Users */
+@import url('./styleAdminUsers.css');
+@import url('./styleAdminAddUser.css');
+@import url('./styleAdminEditUser.css');

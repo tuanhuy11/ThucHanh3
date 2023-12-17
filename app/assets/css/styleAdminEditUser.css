@@ -1,0 +1,82 @@
+.admin-edit-user-page {
+    display: flex;
+    margin-top: calc(80px + 78.5px);
+}
+
+.admin-edit-user-page .container {
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.admin-edit-user-page .container .admin-edit-user-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.admin-edit-user-page .container .admin-edit-user-page-heading a {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(135,139,152);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.admin-edit-user-page .form-edit-user {
+    width: 70%;
+}
+
+.admin-edit-user-page .form-edit-user .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.admin-edit-user-page .form-edit-user .form-group label {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.admin-edit-user-page .form-edit-user input[type="text"],
+.admin-edit-user-page .form-edit-user input[type="email"],
+.admin-edit-user-page .form-edit-user input[type="password"] {
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.admin-edit-user-page .form-edit-user .form-group:last-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.admin-edit-user-page .form-edit-user .option {
+    margin-right: 20px;
+}
+.admin-edit-user-page .form-edit-user .option:last-of-type {
+    margin-right: 0px;
+}
+
+.admin-edit-user-page .form-edit-user .button-edit {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    background-color: var(--middle-orange);
+    padding: 10px 0px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}

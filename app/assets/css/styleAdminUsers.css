@@ -1,0 +1,229 @@
+.admin-users-page {
+    display: flex;
+    margin-top: calc(80px + 78.5px);
+}
+
+.admin-users-page .container {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.admin-users-page .admin-users-page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.admin-users-page .admin-users-page-heading a {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(135,139,152);
+}
+
+.admin-users-page .admin-users-page-heading a svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    margin-right: 5px;
+}
+
+.admin-users-page .table-users {
+    width: 100%;
+    border-collapse: collapse;
+    border-top-right-radius: 10px;
+}
+
+.admin-users-page .table-users thead {
+    background-color: var(--light-orange);
+    color: white;
+    font-weight: 700;
+    border-top-right-radius: 10px;
+}
+
+.admin-users-page .table-users td {
+    padding: 15px;
+}
+
+.admin-users-page .table-users thead td:first-of-type {
+    border-top-left-radius: 10px;
+}
+.admin-users-page .table-users thead td:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+.admin-users-page .table-users td:first-of-type {
+    width: 8%;
+}
+.admin-users-page .table-users td:nth-of-type(2) {
+    width: 20%;
+}
+.admin-users-page .table-users td:nth-of-type(3) {
+    width: 37%;
+}
+.admin-users-page .table-users td:nth-of-type(4) {
+    width: 18%;
+}
+.admin-users-page .table-users td:last-of-type {
+    width: 20%;
+}
+
+.admin-users-page .table-users tbody td {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.admin-users-page .table-users tbody tr:nth-child(2n) td {
+    background-color: rgba(255,142,0, 0.3);
+}
+
+.admin-users-page .table-users tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.admin-users-page .table-users tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.admin-users-page .table-users a {
+    display: inline-block;
+}
+
+.admin-users-page .table-users label,
+.admin-users-page .table-users button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.admin-users-page .table-users tbody td:last-of-type {
+    width: 100%;
+}
+
+.admin-users-page .table-users label,
+.admin-users-page .table-users .link-edit {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.admin-users-page .table-users .link-edit {
+    margin-right: 15px;
+}
+
+.admin-users-page .table-users label svg,
+.admin-users-page .table-users a svg,
+.admin-users-page .table-users button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    stroke-width: 1.5;
+}
+
+/* Style confirm box */
+
+.confirm-box {
+    visibility: hidden;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition: 0.4s linear;
+    z-index: 99;
+}
+
+.confirm-box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.confirm-box-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: white;
+    border-radius: 10px;
+    scale: 0;
+    transition: scale 0.4s linear;
+}
+
+.confirm-box-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.confirm-box-heading svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.confirm-box-buttons button,
+.confirm-box-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.confirm-box-buttons label {
+    margin-right: 15px;
+}
+
+.confirm-box-buttons label,
+.confirm-box-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.confirm-box-buttons label:last-of-type {
+    background-color: #198754;
+}
+
+.confirm-box-buttons label:first-of-type {
+    background-color: #dc3545;
+}
+
+.confirm-box-buttons label svg,
+.confirm-box-buttons button svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2.5;
+    stroke: white;
+    fill: none;
+    margin-right: 10px;
+}
+
+#toggle-confirm-box:checked ~ .confirm-box {
+    visibility: visible;
+    opacity: 1;
+}
+
+#toggle-confirm-box:checked ~ .confirm-box .confirm-box-main {
+    scale: 1;
+}
