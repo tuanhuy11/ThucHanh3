@@ -5,4 +5,6 @@
     define('DB_NAME', 'lms');
     define('DB_USER', 'root');
     define('DB_PASS', '');
+    define('LIMIT', 3);
+    define('LIMIT_NUMBER', 3);
 ?>

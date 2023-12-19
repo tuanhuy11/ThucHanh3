@@ -9,14 +9,14 @@
     </head>
 
     <body>
-        <?php require_once '../../components/navigation.php' ?>
+        <?php require_once APP_ROOT.'/app/components/navigation.php';?>
 
         <main class="login-page-main">
-            <form action="" class="form-login" autocomplete="off">
+            <form action="index.php?controller=home&action=handleLogin" method="POST" class="form-login" autocomplete="off" >
                 <h2 class="form-login-heading">LOGIN</h2>
 
                 <div class="form-group">
-                    <input type="text" name="username" placeholder=" " id="input-username">
+                    <input type="text" name="email" placeholder=" " id="input-username">
                     <label for="input-username">Username</label>
                 </div>
 

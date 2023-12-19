@@ -11,13 +11,13 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="/app/views/myCourses/index.php" class="nav-link">My Courses</a>
+                        <a href="index.php?controller=course" class="nav-link">My Courses</a>
                     </li>
                 </ul>
             </div>
 
             <div class="nav-right">
-                <a href="/app/views/auth/login.php">Login</a>
+                <a href="index.php?controller=home&action=login">Login</a>
                 <a href="">Logout</a>
                 <a href="/app/views/admin/index.php">Admin</a>
             </div>
