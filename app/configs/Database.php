@@ -20,4 +20,7 @@ class Database {
             echo $e->getMessage();
         }
     }
+    public function getConnection() {
+        return $this->conn;
+    }
 }
